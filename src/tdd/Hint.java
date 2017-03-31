@@ -45,5 +45,9 @@ public class Hint {
     void useCallWitnesses() {
         this.setIsCallWitnesses(false);
     }
+
+    void useRemoveFalseAnswers() {
+        this.setIsRemoveFalseAnswers(false);
+    }
     
 }
