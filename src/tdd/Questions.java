@@ -5,19 +5,41 @@
  */
 package tdd;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
 /**
  *
  * @author Роман
  */
 public class Questions {
-
+    static FileReader file;
+    static BufferedReader buffer;
+static String question , a, b, c, d, answer;
     public Questions() {
+try
+         {
+            file = new FileReader("questions.txt"); // Initializes  the FileReader
+            buffer = new BufferedReader(file); // Initializes the BufferedReader
+         }
+            catch (IOException e)
+            {
 
+            }
     }
 
     public String newQuestion() {
 
-        return "Сколько лет исполняется Конституции Российской Федерации в 2015 году?";
+        try
+         {
+            question = buffer.readLine(); // Sets the value of question
+         }
+            catch (IOException e)
+            {
+
+            }
+         return question;
 
     }
     public String qetAnswerA(){

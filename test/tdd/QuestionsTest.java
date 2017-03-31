@@ -97,4 +97,9 @@ public class QuestionsTest {
               expResult  = contest.startTest();
         assertTrue(expResult);
     }
+    public void LoadQuestionFromFile(){
+        Questions question = new Questions();
+        String expQuest = "Сколько лет исполняется Конституции Российской Федерации в 2015 году?";
+        assertEquals(expQuest,question.newQuestion());
+    }
 }
