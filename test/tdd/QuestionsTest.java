@@ -91,5 +91,10 @@ public class QuestionsTest {
         String expAnswer = "c";
         assertEquals(expAnswer,question.qetRightAnswer());
     }
-    
+    public void LoadQuestionWithAnswers(){
+        Contest contest = new Contest();
+        boolean expResult;
+              expResult  = contest.startTest();
+        assertTrue(expResult);
+    }
 }
