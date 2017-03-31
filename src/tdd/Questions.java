@@ -14,47 +14,73 @@ import java.io.IOException;
  * @author Роман
  */
 public class Questions {
+
     static FileReader file;
     static BufferedReader buffer;
-static String question , a, b, c, d, answer;
+    static String question, a, b, c, d, answer;
+
     public Questions() {
-try
-         {
+        try {
             file = new FileReader("questions.txt"); // Initializes  the FileReader
             buffer = new BufferedReader(file); // Initializes the BufferedReader
-         }
-            catch (IOException e)
-            {
+        } catch (IOException e) {
 
-            }
+        }
     }
 
     public String newQuestion() {
 
-        try
-         {
+        try {
             question = buffer.readLine(); // Sets the value of question
-         }
-            catch (IOException e)
-            {
+        } catch (IOException e) {
 
-            }
-         return question;
+        }
+        return question;
 
     }
-    public String qetAnswerA(){
-        return "20";
+
+    public String qetAnswerA() {
+        try {
+            a = buffer.readLine(); // Sets the value of a
+        } catch (IOException e) {
+
+        }
+        return a;
     }
-    public String qetAnswerB(){
-        return "21";
+
+    public String qetAnswerB() {
+        try {
+            b = buffer.readLine(); // Sets the value of b
+        } catch (IOException e) {
+
+        }
+        return b;
     }
-    public String qetAnswerC(){
-        return "22";
+
+    public String qetAnswerC() {
+        try {
+            c = buffer.readLine(); // Sets the value of c
+        } catch (IOException e) {
+
+        }
+        return c;
     }
-    public String qetAnswerD(){
-        return "35";
+
+    public String qetAnswerD() {
+        try {
+            d = buffer.readLine(); // Sets the value of d
+        } catch (IOException e) {
+
+        }
+        return d;
     }
-    public String qetRightAnswer(){
-        return "c";
+
+    public String qetRightAnswer() {
+        try {
+            answer = buffer.readLine(); // Sets the value of answer
+        } catch (IOException e) {
+
+        }
+        return answer;
     }
 }

@@ -50,6 +50,7 @@ public class QuestionsTest {
         //answer = question.newQuestion("Статья 322 уголовного кодекса",1);
         //assertTrue(answer);
     }
+    
     @Test
     public void LoadQuestionTest(){
         Questions question = new Questions();
@@ -86,20 +87,85 @@ public class QuestionsTest {
         assertEquals(expAnswer,question.qetAnswerD());
         
     }
+    @Test
     public void LoadRightAnswer(){
         Questions question = new Questions();
         String expAnswer = "c";
         assertEquals(expAnswer,question.qetRightAnswer());
     }
+    @Test
     public void LoadQuestionWithAnswers(){
         Contest contest = new Contest();
         boolean expResult;
               expResult  = contest.startTest();
         assertTrue(expResult);
     }
+    @Test
     public void LoadQuestionFromFile(){
         Questions question = new Questions();
         String expQuest = "Сколько лет исполняется Конституции Российской Федерации в 2015 году?";
         assertEquals(expQuest,question.newQuestion());
     }
+    @Test
+    public void LoadAnswerAFromFile(){
+        Questions question = new Questions();
+        String expQuest = "Сколько лет исполняется Конституции Российской Федерации в 2015 году?";
+        assertEquals(expQuest,question.newQuestion());
+        String expAnswer = "a) 20";
+        assertEquals(expAnswer,question.qetAnswerA());
+    }
+    @Test
+     public void LoadAnswerBFromFile(){
+        Questions question = new Questions();
+        String expQuest = "Сколько лет исполняется Конституции Российской Федерации в 2015 году?";
+        assertEquals(expQuest,question.newQuestion());
+        String expAnswer = "a) 20";
+        assertEquals(expAnswer,question.qetAnswerA());
+        expAnswer = "b) 21";
+        assertEquals(expAnswer,question.qetAnswerB());
+    }
+     @Test
+      public void LoadAnswerCFromFile(){
+        Questions question = new Questions();
+        String expQuest = "Сколько лет исполняется Конституции Российской Федерации в 2015 году?";
+        assertEquals(expQuest,question.newQuestion());
+        String expAnswer = "a) 20";
+        assertEquals(expAnswer,question.qetAnswerA());
+        expAnswer = "b) 21";
+        assertEquals(expAnswer,question.qetAnswerB());
+        expAnswer = "c) 22";
+        assertEquals(expAnswer,question.qetAnswerC());
+    }
+      @Test
+       public void LoadAnswerDFromFile(){
+        Questions question = new Questions();
+        String expQuest = "Сколько лет исполняется Конституции Российской Федерации в 2015 году?";
+        assertEquals(expQuest,question.newQuestion());
+        String expAnswer = "a) 20";
+        assertEquals(expAnswer,question.qetAnswerA());
+        expAnswer = "b) 21";
+        assertEquals(expAnswer,question.qetAnswerB());
+        expAnswer = "c) 22";
+        assertEquals(expAnswer,question.qetAnswerC());
+        expAnswer = "d) 35";
+        assertEquals(expAnswer,question.qetAnswerD());
+    }
+    @Test
+        public void LoadRightAnswerFromFile(){
+        Questions question = new Questions();
+        String expQuest = "Сколько лет исполняется Конституции Российской Федерации в 2015 году?";
+        assertEquals(expQuest,question.newQuestion());
+        String expAnswer = "a) 20";
+        assertEquals(expAnswer,question.qetAnswerA());
+        expAnswer = "b) 21";
+        assertEquals(expAnswer,question.qetAnswerB());
+        expAnswer = "c) 22";
+        assertEquals(expAnswer,question.qetAnswerC());
+
+        expAnswer = "d) 35";
+                assertEquals(expAnswer,question.qetAnswerD());
+        expAnswer = "c";
+        assertEquals(expAnswer,question.qetRightAnswer());
+    }
+    
 }
