@@ -11,14 +11,16 @@ package tdd;
  */
 public class Questions {
 
-
     public Questions() {
 
     }
 
     public String newQuestion() {
-            return "Сколько лет исполняется Конституции Российской Федерации в 2015 году?";
-            
- }
 
+        return "Сколько лет исполняется Конституции Российской Федерации в 2015 году?";
+
+    }
+    public String qetAnswerA(){
+        return "20";
+    }
 }

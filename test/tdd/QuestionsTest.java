@@ -58,5 +58,11 @@ public class QuestionsTest {
         
     }
     
-    
+    @Test
+    public void LoadAnswerATest(){
+        Questions question = new Questions();
+        String expAnswer = "20";
+        assertEquals(expAnswer,question.getAnswerA());
+        
+    }
 }
