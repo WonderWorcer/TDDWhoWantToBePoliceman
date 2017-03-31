@@ -6,8 +6,10 @@
 package tdd;
 
 import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 /**
  *
@@ -22,7 +24,7 @@ public class Questions {
     public Questions() {
         try {
             file = new FileReader("questions.txt"); // Initializes  the FileReader
-            buffer = new BufferedReader(file); // Initializes the BufferedReader
+            buffer = new BufferedReader(new InputStreamReader(new FileInputStream("questions.txt"),"Cp1251")); // Initializes the BufferedReader
         } catch (IOException e) {
 
         }
