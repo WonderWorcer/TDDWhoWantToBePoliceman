@@ -62,7 +62,34 @@ public class QuestionsTest {
     public void LoadAnswerATest(){
         Questions question = new Questions();
         String expAnswer = "20";
-        assertEquals(expAnswer,question.getAnswerA());
+        assertEquals(expAnswer,question.qetAnswerA());
         
     }
+    @Test
+    public void LoadAnswerBTest(){
+        Questions question = new Questions();
+        String expAnswer = "21";
+        assertEquals(expAnswer,question.qetAnswerB());
+        
+    }
+    @Test
+    public void LoadAnswerCTest(){
+        Questions question = new Questions();
+        String expAnswer = "22";
+        assertEquals(expAnswer,question.qetAnswerC());
+        
+    }
+    @Test
+    public void LoadAnswerDTest(){
+        Questions question = new Questions();
+        String expAnswer = "35";
+        assertEquals(expAnswer,question.qetAnswerD());
+        
+    }
+    public void LoadRightAnswer(){
+        Questions question = new Questions();
+        String expAnswer = "c";
+        assertEquals(expAnswer,question.qetRightAnswer());
+    }
+    
 }

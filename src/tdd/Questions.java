@@ -23,4 +23,16 @@ public class Questions {
     public String qetAnswerA(){
         return "20";
     }
+    public String qetAnswerB(){
+        return "21";
+    }
+    public String qetAnswerC(){
+        return "22";
+    }
+    public String qetAnswerD(){
+        return "35";
+    }
+    public String qetRightAnswer(){
+        return "c";
+    }
 }
