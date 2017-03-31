@@ -16,8 +16,9 @@ public class Questions {
 
     }
 
-    public boolean newQuestion(String quest, int answer) {
-            return true;
+    public String newQuestion() {
+            return "Сколько лет исполняется Конституции Российской Федерации в 2015 году?";
+            
  }
 
 }

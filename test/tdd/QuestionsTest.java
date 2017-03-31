@@ -5,6 +5,7 @@
  */
 package tdd;
 
+import java.util.HashMap;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -46,7 +47,16 @@ public class QuestionsTest {
     public void newQuestionTest(){
         Questions question = new Questions();
         boolean answer;
-        answer = question.newQuestion("Статья 322 уголовного кодекса",1);
-        assertTrue(answer);
+        //answer = question.newQuestion("Статья 322 уголовного кодекса",1);
+        //assertTrue(answer);
     }
+    @Test
+    public void LoadQuestionTest(){
+        Questions question = new Questions();
+        String expQuest = "Сколько лет исполняется Конституции Российской Федерации в 2015 году?";
+        assertEquals(expQuest,question.newQuestion());
+        
+    }
+    
+    
 }
